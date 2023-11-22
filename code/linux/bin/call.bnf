@@ -1,0 +1,9 @@
+﻿#BNF+IAT 1.0 UTF-8;
+
+!grammar cmd;
+!slot <cmd>;
+!start <cmdstart>;
+
+<cmdstart>:<cmd>;
+
+<cmd>:开始!id(1)|相册!id(2)|音乐!id(3)|退出!id(4);
